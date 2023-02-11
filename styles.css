@@ -1,0 +1,25 @@
+body{
+    background-image: url(https://www.cucinare.tv/wp-content/uploads/2018/12/18-12-27-Lujoso2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1{
+    font-family: IMPACT;
+    font-size: xx-large;
+    color: rgb(83, 64, 6);
+    text-shadow: 0 0 30px #fff;
+    padding-top: 50px;
+    padding-left: 105px;
+    
+}
+.container-fluid {
+    padding-top: 250px;
+    display: flex;
+    justify-content: center;	
+}
+
+button{
+    box-shadow: 0 0 20px rgb(245, 247, 246);
+}

@@ -1,9 +1,18 @@
-const who = ["My husband🙋‍♂️", "My mom💁‍♀️", "My daughter👧", "My grandma👵"];    
-const what = ["ate🍕", "cooked 🍲", "cried😭", "jumped🦘"];
-const when = ["Yesterday👣","in the morning☀️", "when I was praying🙏", "before the show🎪"];
+const what = ["Carne", "Pollo", "Pescado", "Conejo"];    
+const whit = ["con pasta", "con arroz", "con puré de patatas", "con ensalada"];
+const how = ["y vino blanco","y vino tinto", "y agua", "y coca-cola"];
+
+function getRandomNumber(array){
+    return Math.floor(Math.random() * array.length)
+}
+
+function getMessage (whatIndex, whitIndex, howIndex){
+    alert (what[whatIndex] +" " + whit[whitIndex]+ " " + how[howIndex])
+}
 
 function generarexcusa (){
-    const columnOnevalue = who[Math.floor(Math.random() * who.length)];
-    const columnTwovalue = what[Math.floor(Math.random() * what.length)];
-    const columnThreevalue = when[Math.floor(Math.random() * when.length)];
-    alert(columnOnevalue +" " + columnTwovalue+ " " + columnThreevalue)}
+    const whatIndex= getRandomNumber(what);
+    const whitIndex = getRandomNumber(whit);
+    const howIndex = getRandomNumber(how);
+    getMessage (whatIndex, whitIndex, howIndex)
+}
